@@ -1,51 +1,456 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Original My Test</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
+
 </head>
+
 <body>
-    <header class="row">
-        <nav class="nav-menu">
-            <ul>
-                <li>Dashboard</li>
-                <li>Layouts</li>
-                <li>UI Elements</li>
-                <li>Forms</li>
-                <li>Tables</li>
-                <li>Data Grids</li>
-                <li>Pages</li>
-                <li>Extras</li>
-                <li>Multi-Level Dropdown</li>
-                <li>Email</li>
-                <li>Charts</li>
-                <li>Animations</li>
-            </ul>
-        </nav>
-        <input type="text">
-        <button>Lorem ipsum dolor sit amet</button>
-        
-        <div>
-            1<i></i>
-        </div>
-        <div>
-            2<i></i>
-        </div>
-        <div>
-            1<i></i>
+    <header class="container black">
+        <div class="row header-nav">
+            <nav class="nav-menu">
+                <input id="menu-burger" class="nav-menu-button" type="checkbox" hidden/>
+                <label for="menu-burger">
+                    <i class="fas fa-bars" id="icon-menu"></i>
+                </label>
+                <ul class="nav-menu nav-menu-list">
+                    <li class="nav-menu-list__item title">KAdmin</li>
+                    <li class="nav-menu-list__item">
+                        <i class="fas fa-tachometer-alt"></i>
+                        Dashboard
+                    </li>
+                    <li class="nav-menu-list__item">
+                        <i class="fas fa-desktop"></i>
+                        Layouts
+                    </li>
+                    <li class="nav-menu-list__item">
+                        <i class="fas fa-paper-plane"></i>
+                        UI Elements
+                    </li>
+                    <li class="nav-menu-list__item">
+                        <i class="fas fa-edit"></i>
+                        Forms
+                    </li>
+                    <li class="nav-menu-list__item">
+                        <i class="fas fa-table"></i>
+                        Tables
+                    </li>
+                    <li class="nav-menu-list__item">
+                        <i class="fas fa-table"></i>
+                        Data Grids
+                    </li>
+                    <li class="nav-menu-list__item">
+                        <i class="fas fa-file"></i>
+                        Pages
+                    </li>
+                    <li class="nav-menu-list__item">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        Extras
+                    </li>
+                    <li class="nav-menu-list__item">
+                        <i class="fas fa-sitemap"></i>
+                        Multi-Level Dropdown
+                    </li>
+                    <li class="nav-menu-list__item">
+                        <i class="fas fa-envelope"></i>
+                        Email
+                    </li>
+                    <li class="nav-menu-list__item">
+                        <i class="fas fa-chart-area"></i>
+                        Charts
+                    </li>
+                    <li class="nav-menu-list__item">
+                        <i class="fas fa-spinner"></i>
+                        Animations
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="search">
+                <span class="fa fa-search"></span>
+                <input placeholder="Search here..." type="text">
+            </div>
+
+            <button class="btn-nav">Lorem ipsum dolor sit amet</button>
+
+            <div class="notification">
+                <i class="fas fa-bell"></i>
+                <div class="circle green">1</div>
+            </div>
+            <div class="notification">
+                <i class="fas fa-envelope"></i>
+                <div class="circle red">2</div>
+            </div>
+            <div class="notification">
+                <i class="fas fa-comment-alt"></i>
+                <div class="circle yellow">3</div>
+            </div>
+
+            <img class="profile-pic" src="img/profile.png" alt="profile picture">
+            <h6 class="name">
+                Melissa Yau
+                <i class="fas fa-sort-down"></i>
+            </h6>
+
+            <div class="notification">
+                <i class="fas fa-credit-card"></i>
+                <div class="circle blue">3</div>
+            </div>
         </div>
 
-        <img src="" alt="">
-        <h6>Robert John</h6>
-
-        <div>
-            1
-            <i></i>
-        </div>
-        
     </header>
-    
+
+    <main class="container main">
+        <header class="header-title">
+            <h1>Dashboard</h1>
+
+            <div class="row">
+                <i class="fas fa-home"></i>
+                <p>Home</p>
+                <i class="fas fa-caret-right"></i>
+                <p>Dashboard</p>
+            </div>
+        </header>
+
+        <section class="main-row main-sections">
+            <article class="card">
+                <div class="row">
+                    <div>
+                        <h4>189s</h4>
+                        <p>Blablablabla</p>
+                    </div>
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                <div class="bar">
+                    <div class="bar-done green"></div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="row">
+                    <div>
+                        <h4>812s</h4>
+                        <p>Blablablabla</p>
+                    </div>
+                    <i class="fas fa-money-bill-alt"></i>
+                </div>
+
+                <div class="bar">
+                    <div class="bar-done blue"></div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="row">
+                    <div>
+                        <h4>155</h4>
+                        <p>Blablablabla</p>
+                    </div>
+                    <i class="fas fa-signal"></i>
+                </div>
+
+                <div class="bar">
+                    <div class="bar-done orange"></div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="row">
+                    <div>
+                        <h4>376</h4>
+                        <p>Blablablabla</p>
+                    </div>
+                    <i class="fas fa-users"></i>
+                </div>
+
+                <div class="bar">
+                    <div class="bar-done yellow"></div>
+                </div>
+            </article>
+        </section>
+
+        <div class="main-row">
+            <section class="main-sections graph-section">
+                <article class="card card-row">
+                    <div class="about-graph">
+                        <h4>Network Performance</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+                        <img src="img/graph.gif" alt="animated graph">
+                    </div>
+
+                    <div class="data-bars">
+                        <h4>Server Status</h4>
+
+                        <div class="data-bars-details">
+                            <div class="row">
+                                <h6>CPU Usage (12 - 32 bla)</h6>
+                                <p>30%</p>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-done orange"></div>
+                            </div>
+                        </div>
+
+                        <div class="data-bars-details">
+                            <div class="row">
+                                <h6>CPU Usage (12 - 32 bla)</h6>
+                                <p>65%</p>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-done blue"></div>
+                            </div>
+                        </div>
+
+                        <div class="data-bars-details">
+                            <div class="row">
+                                <h6>CPU Usage (12 - 32 bla)</h6>
+                                <p>50%</p>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-done green"></div>
+                            </div>
+                        </div>
+                        <div class="data-bars-details">
+                            <div class="row">
+                                <h6>CPU Usage (12 - 32 bla)</h6>
+                                <p>70%</p>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-done yellow"></div>
+                            </div>
+                        </div>
+
+                        <div class="data-bars-details">
+                            <div class="row">
+                                <h6>CPU Usage (12 - 32 bla)</h6>
+                                <p>95%</p>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-done magenta"></div>
+                            </div>
+                        </div>
+
+                        <div class="data-bars-details">
+                            <div class="row">
+                                <h6>CPU Usage (12 - 32 bla)</h6>
+                                <p>50%</p>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-done purple"></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="main-sections main-sections-chat">
+                <article class="card chat">
+                    <h4>Chats</h4>
+
+                    <div class="row">
+                        <img src="img/profile.png" alt="profile picture">
+                        <div class="chat-message">
+                            <div class="row">
+                                <h6>Nome</h6>
+                                <p>16:31:02 24 jan 2018</p>
+                            </div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus temporibus, magnam nam
+                                impedit dicta illo soluta ipsam nemo iusto alias voluptates neque odio? </p>
+                        </div>
+
+                    </div>
+
+                    <div class="row row-reverse">
+                        <img src="img/profile.png" alt="profile picture">
+                        <div class="chat-message">
+                            <div class="row">
+                                <h6>Nome</h6>
+                                <p>16:31:02 24 jan 2018</p>
+                            </div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus temporibus, magnam nam
+                                impedit dicta illo soluta ipsam nemo iusto alias voluptates neque odio?</p>
+                        </div>
+                    </div>
+
+                    <div class="row input-msg">
+                        <input type="text" placeholder="Type a message here...">
+                        <button>
+                            <i class="fas fa-check"></i>
+                        </button>
+                    </div>
+                    
+                </article>
+            </section>
+        </div>
+
+
+        <div class="main-row">
+            <section class="main-sections main-sections-info">
+                <article class="card general-info">
+                    <div class="row">
+                        <div class="info-summary">
+                            <h4>Melissa Yau</h4>
+                            <p>
+                                <strong>About:</strong> Web Designer Full
+                            </p>
+                            <p>
+                                <strong>Mini-Bio:</strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum fugit
+                                praesentium consequuntur a.
+                            </p>
+                            <div class="row">
+                                <p>
+                                    <strong>Skills:</strong>
+                                </p>
+                                <p class="skills">Blabla</p>
+                                <p class="skills">Blabla</p>
+                                <p class="skills">Blabla</p>
+                            </div>
+                        </div>
+
+                        <div class="pic-rating">
+                            <img src="img/profile.png" alt="profile picture">
+                            <div class="stars">
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="row">
+                        <div class="numbers">
+                            <h5>20,7K</h5>
+                            <p>blabla</p>
+                            <button class="info-btn yellow">
+                                <i class="fas fa-arrow-alt-circle-down"></i>
+                                Follow
+                            </button>
+                        </div>
+                        <div class="numbers">
+                            <h5>245</h5>
+                            <p>blabla</p>
+                            <button class="info-btn blue">
+                                <i class="fas fa-arrow-alt-circle-down"></i>
+                                Follow
+                            </button>
+                        </div>
+                        <div class="numbers">
+                            <h5>43</h5>
+                            <p>blabla</p>
+                            <button class="info-btn orange">
+                                <i class="fas fa-arrow-alt-circle-down"></i>
+                                Follow
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="main-sections main-sections-checklist">
+                <article class="card checklist">
+                    <h4>To Do List</h4>
+
+                    <div class="list">
+                        <div class="row">
+                            <div>
+                                <input type="checkbox" name="todo-list" id="todo-list">
+                                <label for="todo-list">Lorem ipsum dolor sit amet</label>
+                            </div>
+                            <div class="icons">
+                                <i class="fas fa-check"></i>
+                                <i class="fas fa-edit"></i>
+                                <i class="fas fa-trash-alt"></i>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <input type="checkbox" name="todo-list" id="todo-list">
+                                <label for="todo-list">Lorem ipsum dolor sit amet</label>
+                            </div>
+                            <div class="icons">
+                                <i class="fas fa-check"></i>
+                                <i class="fas fa-edit"></i>
+                                <i class="fas fa-trash-alt"></i>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <input type="checkbox" name="todo-list" id="todo-list">
+                                <label for="todo-list">Lorem ipsum dolor sit amet</label>
+                            </div>
+                            <div class="icons">
+                                <i class="fas fa-check"></i>
+                                <i class="fas fa-edit"></i>
+                                <i class="fas fa-trash-alt"></i>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <input type="checkbox" name="todo-list" id="todo-list">
+                                <label for="todo-list">Lorem ipsum dolor sit amet</label>
+                            </div>
+                            <div class="icons">
+                                <i class="fas fa-check"></i>
+                                <i class="fas fa-edit"></i>
+                                <i class="fas fa-trash-alt"></i>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <input type="checkbox" name="todo-list" id="todo-list">
+                                <label for="todo-list">Lorem ipsum dolor sit amet</label>
+                            </div>
+                            <div class="icons">
+                                <i class="fas fa-check"></i>
+                                <i class="fas fa-edit"></i>
+                                <i class="fas fa-trash-alt"></i>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <input type="checkbox" name="todo-list" id="todo-list">
+                                <label for="todo-list">Lorem ipsum dolor sit amet</label>
+                            </div>
+                            <div class="icons">
+                                <i class="fas fa-check"></i>
+                                <i class="fas fa-edit"></i>
+                                <i class="fas fa-trash-alt"></i>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <input type="checkbox" name="todo-list" id="todo-list">
+                                <label for="todo-list">Lorem ipsum dolor sit amet</label>
+                            </div>
+                            <div class="icons">
+                                <i class="fas fa-check"></i>
+                                <i class="fas fa-edit"></i>
+                                <i class="fas fa-trash-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+            </section>
+        </div>
+
+    </main>
+
+
 </body>
+
 </html>
